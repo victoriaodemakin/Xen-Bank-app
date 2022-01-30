@@ -58,6 +58,8 @@ export default {
 #app {
   font-family: "Raleway", sans-serif;
   font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 .info-section h2 {
   font-size: 2em;
