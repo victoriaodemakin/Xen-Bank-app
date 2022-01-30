@@ -30,7 +30,6 @@ export default {
 .hero-container {
   width: 100%;
   margin-top: -2em;
-  /* height: 50vh; */
 }
 .hero-container-header {
   width: 100%;

@@ -1,7 +1,6 @@
 <template>
   <section class="hero-container">
     <Header />
-
     <div class="main-hero-section">
       <div class="hero-col-1">
         <h1>{{ headertext }}</h1>
@@ -57,15 +56,8 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-.info-section {
-  margin: 3em auto;
+  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .info-section h2 {
   font-size: 2em;

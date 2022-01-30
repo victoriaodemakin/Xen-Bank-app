@@ -174,7 +174,7 @@
 
 <style>
 .service-background {
-  background: var(--service-bg);
+  background: linear-gradient(from top to bottom #020c1b, rgba(0, 0, 0, 1));
   padding: 2em 1em;
 }
 .services-container {
@@ -205,7 +205,7 @@
 .row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 22rem));
-  margin: 0 auto;
+
   width: 100%;
 }
 .column {

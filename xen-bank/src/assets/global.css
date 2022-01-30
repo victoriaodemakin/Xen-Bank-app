@@ -1,7 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap");
-
 *,
 *::after,
 *::before {
@@ -16,13 +12,14 @@
 html {
   scroll-behavior: smooth;
 
-  --font-1: "Montserrat", sans-serif;
-  --font-2: "Josefin Sans", sans-serif;
-  --font-3: "Montserrat", sans-serif;
+  --font-1: "Lato", sans-serif;
+  --font-2: "Raleway", sans-serif;
+  --font-3: "Raleway", sans-serif;
+
   --service-bg: #020c1b;
   --service-bg-2: #0a192f;
   --text-color: #ffffff;
-  --button-bg: #4267b2;
+  --button-bg: #0066cc;
   --shadow: rgba(2, 12, 27, 0.7);
   --green-bg: #18af8c57;
   --purple-bg: #5a1bad;
@@ -56,11 +53,45 @@ html:focus-within {
   }
 }
 body {
-  font-family: "Ubuntu", sans-serif;
-  font-family: "Josefin Sans", sans-serif;
-  font-family: "Montserrat", sans-serif;
-  background: var(--service-bg-2);
+  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
+
   overflow: scroll;
+}
+.hero-container {
+  width: 100%;
+  padding: 3em 0em 3em 0em;
+  background-image: url(bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+.services-container {
+  background-repeat: no-repeat;
+  margin: -3em auto;
+  padding: 5em 2em;
+  background-image: url(bg.png);
+  background-size: cover;
+  background-position: right;
+}
+.info-section {
+  margin: 3em auto 0em auto;
+  background-image: url(bg.png);
+  background-size: cover;
+  background-position: right;
+  padding: 2em 0em;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0em 1em;
+  background-image: url(bg.png);
+}
+.service-background {
+  background: linear-gradient(from top to bottom #020c1b, rgba(0, 0, 0, 1));
+  padding: 4em 1em;
 }
 h1 {
   color: var(--text-color);
@@ -79,7 +110,43 @@ button {
 a {
   text-decoration: none;
 }
+@media all and (max-width: 375px) {
+  .service-background {
+    /* background: linear-gradient(from top to bottom #020c1b, rgba(0, 0, 0, 1)); */
+    padding: 4em 1em;
+    background: linear-gradient(rgba(2, 12, 27, 1), rgba(0, 0, 0, 1));
+  }
+  .hero-col-2 {
+    width: 80%;
+    padding: 1em 1em;
+    margin: 0 auto;
+  }
+}
+@media all and (min-width: 376px) {
+  .service-background {
+    /* background: linear-gradient(from top to bottom #020c1b, rgba(0, 0, 0, 1)); */
+    padding: 4em 1em;
+    background: linear-gradient(rgba(2, 12, 27, 1), rgba(0, 0, 0, 1));
+  }
+}
 @media all and (min-width: 765px) {
+  .hero-container {
+    width: 100%;
+    padding: 3em 0em 3em 0em;
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .info-section {
+    margin: 0em auto 0em auto;
+    background-image: url(bg.png);
+    background-size: cover;
+    background-position: right;
+    padding: 1em 2em;
+    background-repeat: no-repeat;
+  }
   .main-hero-section {
     margin: 2em auto;
     padding: 2em 1em;
@@ -98,7 +165,7 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0em 3em;
+    padding: 3em 3em;
   }
   .hero-container-header {
     width: 100%;
@@ -112,12 +179,15 @@ a {
     position: relative;
   }
   .service-background {
-    background: var(--service-bg);
+    background: linear-gradient(rgba(2, 12, 27, 1), rgba(0, 0, 0, 1));
     padding: 2em 1em;
   }
   .services-container {
-    margin: 4em auto;
-    padding: 0 4em;
+    margin: -4em auto 0em auto;
+    padding: 5em 4em;
+    background-image: url(bg.png);
+    background-size: cover;
+    background-position: left right;
   }
   .info-section h2 {
     font-size: 2em;
@@ -194,7 +264,7 @@ a {
     margin: 0 auto;
   }
   .main-hero-section {
-    margin: 2em auto;
+    margin: 2em auto 0em auto;
     padding: 2em 10em;
     display: grid;
     width: 100%;
@@ -209,18 +279,47 @@ a {
     margin: auto;
   }
   .hero-col-1 p {
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: var(--font-3);
-    text-align: justify;
-    padding: 0.2em 0.6em 0.2em 0.6em;
+    text-align: left;
+    padding: 0.2em 1.3em 0.2em 1.3em;
+    color: var(--text-color);
+    font-weight: 500;
+    width: 60%;
+    margin: 0em 0 1em 0;
+    line-height: 1.5em;
+  }
+  .services-container {
+    margin: -2.2em auto;
+    padding: 7em 16em;
+  }
+  .services-container h3 {
+    font-size: 2.5em;
+    text-align: center;
+    padding: 0.2em 2em;
+    font-family: var(--font-1);
+    color: var(--text-color);
+  }
+  .section-heading p {
+    font-size: 0.9em;
+    font-family: var(--font-3);
+    text-align: center;
+    padding: 0.2em 3em 0.2em 3em;
     color: var(--text-color);
     font-weight: 500;
     margin: 0em auto 1em auto;
     line-height: 1.5em;
   }
-  .services-container {
-    margin: 4em auto;
-    padding: 0 16em;
+
+  .services-container p {
+    font-size: 0.9em;
+    font-family: var(--font-3);
+    text-align: center;
+    padding: 0.2em 1em 0.2em 1em;
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 0em auto 1em auto;
+    line-height: 1.5em;
   }
   .row {
     display: grid;
@@ -239,17 +338,38 @@ a {
   .info-section p {
     font-size: 1em;
     font-family: var(--font-3);
-    text-align: justify;
-    padding: 0.2em 0.6em 0.2em 0.6em;
+    text-align: left;
+    padding: 0.2em 0em 0.2em 0em;
     color: var(--text-color);
     font-weight: 500;
     margin: 0em auto 1em auto;
     line-height: 1.5em;
+    width: 90%;
   }
   footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0em 10em;
+    padding: 0em 12em;
+    background-image: url(bg.png);
+  }
+
+  .services-container {
+    background-image: url(bg.png);
+    background-size: cover;
+  }
+  .info-section {
+    background-image: url(bg.png);
+    padding-bottom: 2em;
+  }
+  .form-btn {
+    background-color: #0066cc;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    opacity: 0.9;
+    margin: 1em 23%;
   }
 }

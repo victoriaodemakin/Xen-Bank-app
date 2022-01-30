@@ -129,14 +129,14 @@ select:focus {
 }
 /* Set a style for the submit button */
 .form-btn {
-  background-color: var(--button-bg);
+  background-color: #0066cc;
   color: white;
   padding: 15px 20px;
   border: none;
   cursor: pointer;
   width: 200px;
   opacity: 0.9;
-  margin: 1em 0;
+  margin: 1em 15%;
 }
 
 .btn:hover {
